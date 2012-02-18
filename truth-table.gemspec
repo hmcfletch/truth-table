@@ -1,15 +1,15 @@
 # -*- encoding: utf-8 -*-
 $:.push File.expand_path("../lib", __FILE__)
-require "truth-table/version"
+require "truth-table"
 
 Gem::Specification.new do |s|
   s.name        = "truth-table"
-  s.version     = Truth::Table::VERSION
+  s.version     = TruthTable::VERSION
   s.authors     = ["Les Fletcher"]
   s.email       = ["les.fletcher@gmail.com"]
   s.homepage    = ""
-  s.summary     = %q{TODO: Write a gem summary}
-  s.description = %q{TODO: Write a gem description}
+  s.summary     = %q{The gem of truth}
+  s.description = %q{Generate a truth table for a logical expression}
 
   s.rubyforge_project = "truth-table"
 
@@ -18,7 +18,5 @@ Gem::Specification.new do |s|
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   s.require_paths = ["lib"]
 
-  # specify any dependencies here; for example:
-  # s.add_development_dependency "rspec"
-  # s.add_runtime_dependency "rest-client"
+  s.add_development_dependency('test-unit', '~> 2.2.0')
 end
