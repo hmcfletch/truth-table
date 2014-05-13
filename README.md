@@ -12,6 +12,7 @@ Generate a truth table for a logical expression
 
 To use, pass a logical expression consiting of varibale names and logical operators.
 
+    $ irb -r 'truth-table'
     > tt = TruthTable.new("(a && b) || c")
     > puts tt.table_string
      a | b | c | (a && b) || c 
